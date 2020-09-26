@@ -1,9 +1,34 @@
 <ion-header>
-  <ion-toolbar>
+    <div class="arrow-left">
+      <img src="#" alt="arrow-left">
+    </div>
     <ion-title>login</ion-title>
-  </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <div class="form-login">
+    <ion-item>
+      <ion-label position="floating">CPF:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Senha:</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
 
+  <div class="options">
+    <a href="#">
+      <span>Criar conta</span>
+    </a>
+    <a href="#">
+      <span>Recuperar senha</span>
+    </a>
+  </div>
+
+  <footer>
+    <ion-button class="btn-footer">Entrar</ion-button>
+    <button class="exit">Sair</button>
+  </footer>
 </ion-content>
