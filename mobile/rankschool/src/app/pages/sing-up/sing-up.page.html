@@ -1,46 +1,22 @@
-<app-header></app-header>
-<app-input></app-input>
-<app-button></app-button>
+<!-- <app-header></app-header> -->
+<app-input tipo="string"></app-input>
+<!-- <app-button></app-button> -->
+
+<!-- Campos do formulario : Nome / Email / CPF / Senha / Confirmar senha -->
+
 <ion-content>
-<div class="form-login">
-  <ion-item>
-    <ion-label position="floating">Nome:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
+  <div class="options">
+    <input type="radio" id="terms">
+    <a href="#">
+      <span>Criar conta</span>
+    </a>
+    <a href="#">
+      <span>Recuperar senha</span>
+    </a>
+  </div>
 
-  <ion-item>
-    <ion-label position="floating">Email:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">CPF:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Senha:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-
-  <ion-item>
-    <ion-label position="floating">Confirmar senha:</ion-label>
-    <ion-input></ion-input>
-  </ion-item>
-</div>
-
-<div class="options">
-  <input type="radio" id="terms">
-  <a href="#">
-    <span>Criar conta</span>
-  </a>
-  <a href="#">
-    <span>Recuperar senha</span>
-  </a>
-</div>
-
-<footer>
-  <ion-button class="btn-footer">Entrar</ion-button>
-  <button class="exit">Sair</button>
-</footer>
+  <footer>
+    <ion-button class="btn-footer">Entrar</ion-button>
+    <button class="exit">Sair</button>
+  </footer>
 </ion-content>
