@@ -1,3 +1,4 @@
+import { InputComponent } from './../../input/input.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -15,6 +16,6 @@ import { SingUpPage } from './sing-up.page';
     IonicModule,
     SingUpPageRoutingModule
   ],
-  declarations: [SingUpPage]
+  declarations: [SingUpPage, InputComponent]
 })
 export class SingUpPageModule {}
