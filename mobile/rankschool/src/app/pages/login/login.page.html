@@ -1,21 +1,11 @@
 <ion-content>
   <header>
-    <div class="arrow-left">
-      <img src="../../../assets/left-arrow.svg" alt="arrow-left" width="25px">
-    </div>
-    <h1>Login</h1>
+    <app-header title="Login"></app-header>
   </header>
 
   <div class="form-login">
-    <ion-item>
-      <ion-label>CPF:</ion-label>
-      <ion-input type="string" placeholder="123.456.789.00"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Senha:</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
+    <app-input nome="CPF" tipo="string" legenda="123.456.789-00"></app-input>
+    <app-input nome="Senha" tipo="password" legenda="Mínimo 4 caracteres"></app-input>
   </div>
 
   <div class="options">
@@ -28,7 +18,7 @@
   </div>
 
   <footer>
-    <ion-button class="btn-footer">Entrar</ion-button>
-    <button class="exit">sair</button>
+    <app-button content="Login"></app-button>
+    <app-exit></app-exit>
   </footer>
 </ion-content>
