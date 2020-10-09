@@ -1,0 +1,28 @@
+.wrap-input {
+  display: flex;
+  align-items: baseline;
+  color: #222;
+  height: 3em;
+
+  margin: 0 1em 1em;
+  padding: .1em;
+  border-bottom: 1px solid #222;
+
+  p {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 13pt;
+  }
+
+  input {
+    border: none;
+    margin-left: .2em;
+    height: 1.4em;
+    width: 100%;
+    outline: none;
+  }
+
+  .password {
+    width: auto;
+  }
+}
