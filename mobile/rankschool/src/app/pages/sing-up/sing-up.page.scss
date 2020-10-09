@@ -2,3 +2,38 @@
   background-color: #FFF;
   font-family: 'Nunito', sans-serif;
 }
+
+section {
+  background-color: white;
+  height: 100vh;
+  
+  .sing-up {
+    padding-top: 1em;
+  
+    #terms-input {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.6em;
+      text-align: center;
+    
+      a {
+        margin-left: .4em;
+      }
+    }
+  }
+
+  .options {
+    text-align: center;
+    margin-top: .6em;
+
+    a {
+      text-decoration: none;
+      color: #222;
+
+      span {
+        color: #15f;
+      }
+    }
+  }
+}

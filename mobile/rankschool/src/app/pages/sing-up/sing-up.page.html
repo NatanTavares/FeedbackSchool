@@ -1,23 +1,26 @@
 <!-- <app-button></app-button> -->
-<ion-header>
-  <app-header title='Cadastro'></app-header>
-</ion-header>
-
-<ion-content>
-  <form class="cadastro">
-    <app-input nome="Nome" tipo="string" legenda="Mohamed"></app-input>
-    <app-input nome="Email" tipo="email" legenda="mail@email.com.br"></app-input>
-    <app-input nome="Senha" tipo="password" legenda="Min 4"></app-input>
-    <app-input nome="Confirmar senha" tipo="password" legenda="Coloque a senha definida"></app-input>
-    <input type="checkbox" id="terms"><a href="#">Aceito os termos de uso</a>
+<section>
+  <ion-header>
+    <app-header title='Cadastro'></app-header>
+  </ion-header>
+    
+  <form class="sing-up">
+    <app-input nome="Nome" tipo="string" legenda="Digite seu nome completo"></app-input>
+    <app-input nome="CPF" tipo="string" legenda="123.456.789-00"></app-input>
+    <app-input nome="Email" tipo="email" legenda="Digite seu melhor email"></app-input>
+    <app-input nome="Senha" tipo="password" legenda="Mínimo 4 caracteres"></app-input>
+    <app-input nome="Confirmar senha" tipo="password" legenda="Confirme a senha"></app-input>
+    
+    <div id="terms-input">
+      <input type="checkbox" id="terms">
+      <a href="#">Aceito os termos de uso</a>
+    </div>
   </form>
 
   <div class="options">
     <a href="#">
-      <span>Criar conta</span>
-    </a>
-    <a href="#">
-      <span>Recuperar senha</span>
+      Já possui uma conta? 
+      <span>Login</span>
     </a>
   </div>
 
@@ -25,4 +28,4 @@
     <ion-button class="btn-footer">Entrar</ion-button>
     <button class="exit">Sair</button>
   </footer>
-</ion-content>
+</section>
