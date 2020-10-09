@@ -11,6 +11,7 @@ import { SingUpPage } from './sing-up.page';
 import { HeaderComponent } from '../../components/header/header.component';
 import { InputComponent } from '../../components/input/input.component';
 import { ButtonComponent } from '../../components/button/button.component';
+import { ExitComponent } from 'src/app/components/exit/exit.component';
 
 @NgModule({
   imports: [
@@ -23,7 +24,8 @@ import { ButtonComponent } from '../../components/button/button.component';
     SingUpPage, 
     InputComponent, 
     HeaderComponent, 
-    ButtonComponent
+    ButtonComponent,
+    ExitComponent
   ]
 })
 export class SingUpPageModule {}
