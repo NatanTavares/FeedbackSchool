@@ -1,13 +1,18 @@
 <!-- <app-header></app-header> -->
-<app-input tipo="string"></app-input>
 <!-- <app-button></app-button> -->
 
 <!-- Campos do formulario : Nome / Email / CPF / Senha / Confirmar senha -->
 
 <ion-content>
+  <form class="cadastro">
+    <app-input nome="Nome" tipo="string" legenda="Mohamed"></app-input>
+    <app-input nome="Email" tipo="email" legenda="mail@email.com.br"></app-input>
+    <app-input nome="Senha" tipo="password" legenda="Min 4"></app-input>
+    <app-input nome="Confirmar senha" tipo="password" legenda="Coloque a senha definida"></app-input>
+    <input type="radio" id="terms"><a href="#">Aceito os termos de uso</a>
+  </form>
+
   <div class="options">
-    <input type="radio" id="terms">
-      <a href="Aceito os Termos de Uso"></a>
     <a href="#">
       <span>Criar conta</span>
     </a>
