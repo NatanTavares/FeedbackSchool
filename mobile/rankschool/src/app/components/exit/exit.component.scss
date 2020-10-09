@@ -1,0 +1,13 @@
+.exit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 1em 0 1.4em;
+
+  strong {
+    color: var(--color-exit);
+    font-size: 17pt;
+    font-weight: 500;
+  }
+}
