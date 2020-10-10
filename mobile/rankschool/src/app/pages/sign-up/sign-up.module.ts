@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { SingUpPageRoutingModule } from './sing-up-routing.module';
+import { SignUpPageRoutingModule } from './sign-up-routing.module';
 
-import { SingUpPage } from './sing-up.page';
+import { SignUpPage } from './sign-up.page';
 
 import { HeaderComponent } from '../../components/header/header.component';
 import { InputComponent } from '../../components/input/input.component';
@@ -18,14 +18,14 @@ import { ExitComponent } from 'src/app/components/exit/exit.component';
     CommonModule,
     FormsModule,
     IonicModule,
-    SingUpPageRoutingModule
+    SignUpPageRoutingModule
   ],
   declarations: [
-    SingUpPage, 
+    SignUpPage, 
     InputComponent, 
     HeaderComponent, 
     ButtonComponent,
     ExitComponent
   ]
 })
-export class SingUpPageModule {}
+export class SignUpPageModule {}
