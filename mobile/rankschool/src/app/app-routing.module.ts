@@ -22,7 +22,11 @@ const routes: Routes = [
   {
     path: 'sign-up',
     loadChildren: () => import('./pages/sign-up/sign-up.module').then( m => m.SignUpPageModule)
+  },  {
+    path: 'rank',
+    loadChildren: () => import('./pages/rank/rank.module').then( m => m.RankPageModule)
   }
+
 ];
 
 @NgModule({
