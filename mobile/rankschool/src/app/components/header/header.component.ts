@@ -10,6 +10,9 @@ export class HeaderComponent implements OnInit {
   @Input('title')
   title: string = 'Title';
 
+  @Input('toggle')
+  toggle: string = 'off';
+  
   constructor() { }
 
   ngOnInit() {}

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { MenuController } from '@ionic/angular';
 
 @Component({
   selector: 'app-menu',
@@ -7,7 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor() { }
+  @Input('toggle') 
+  toggle: string = 'off';
+
+  constructor(private _menu: MenuController) { }
+
+  openFirst() {
+    this._menu.enable(true, 'first');
+    this._menu.open('first');
+  }
+
+  openEnd() {
+    this._menu.open('end');
+  }
+
+  openCustom() {
+    this._menu.enable(true, 'custom');
+    this._menu.open('custom');
+  }
 
   ngOnInit() {}
 
