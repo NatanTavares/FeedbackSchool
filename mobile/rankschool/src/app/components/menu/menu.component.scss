@@ -1,3 +1,13 @@
 .off {
   display: none;
 }
+
+div {
+  position: absolute;
+  right: 2em;
+  top: 3em;
+
+  ion-menu-button {
+    color: #FFF;
+  }  
+}
