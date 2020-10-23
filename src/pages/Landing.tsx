@@ -1,20 +1,59 @@
 import React from 'react';
-import { Button, StyleSheet, Text, View } from 'react-native';
+import Header from '../components/Header';
+import { Image, StyleSheet, Text, View } from 'react-native';
+
+import Logo from '../assets/Logo.png';
+
+import { useFonts, Nunito_400Regular, Nunito_700Bold } from '@expo-google-fonts/nunito';
 
 function Landing() {
+  let [fontsLoaded] = useFonts({
+    Nunito_400Regular,
+    Nunito_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return <Text>Carregando...</Text>;
+  }
+
   return (
-    <View>
-      <Text style={styles.title}>RankSchool</Text>
-    </View>
+    <>
+      <Header goBackIcon={false} menuIcon={false} />
+      
+      <View style={styles.imgPosition}>
+        <Image source={Logo} style={styles.img} />
+      </View>
+
+      <View style={styles.positionTitle}>
+        <Text style={styles.fontTitle}>RankSchool</Text>
+      </View>
+    </>
   );
 }
 
 export default Landing;
 
 const styles = StyleSheet.create({
-  title: {
-    color: '#1d2424',
-    fontSize: 38,
-    fontWeight: "700",
-  }
+  imgPosition: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  
+  img: {
+    width: 170,
+    height: 170,
+  },
+  
+  positionTitle: {
+    alignItems: 'center',
+    marginTop: 120,
+  },
+
+  fontTitle: {
+    fontFamily: 'Nunito_700Bold',
+    fontSize: 40,
+    color: '#2F364D',
+  },
 });
+
