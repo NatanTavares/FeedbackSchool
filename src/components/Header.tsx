@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
     
     flexDirection: 'row',
     backgroundColor: '#86A5FF',
-    height: 150,
+    height: 170,
   },
 
   offVisibility: {
