@@ -1,0 +1,52 @@
+<ion-content>
+  <header>
+    <ion-icon id="arrow" size="large" name="arrow-back"></ion-icon>
+    <h1>Avaliar</h1>
+    <ion-icon id="iconmenu" size="large" name="menu"></ion-icon>
+  </header>
+
+  <div class="form-login">
+    <ion-item>
+      <ion-input type="string" placeholder="Nome Instituição"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Relação com a instituição</ion-label>
+      <ion-select value="Estudante" okText="Ok" cancelText="Cacelar">
+        <ion-select-option value="professor">Professor</ion-select-option>
+        <ion-select-option value="pais">Pais</ion-select-option>
+        <ion-select-option value="exEstudante">Ex-Estudante</ion-select-option>
+        <ion-select-option value="funcionario">Funcionário/Outros</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Quantas estrelas a instituição merece?</ion-label>
+      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    </ion-item>  
+      <div class="estrelas">
+        <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+        <label for="cm_star-1"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-1" name="fb" value="1" />
+        <label for="cm_star-2"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-2" name="fb" value="2" />
+        <label for="cm_star-3"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-3" name="fb" value="3" />
+        <label for="cm_star-4"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-4" name="fb" value="4" />
+        <label for="cm_star-5"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-5" name="fb" value="5" />
+      </div>
+
+      <ion-item>
+        <ion-textarea placeholder="Deixe sua observação aqui.."></ion-textarea>
+      </ion-item>
+
+  </div>
+
+
+  <footer>
+    <ion-button class="btn-footer">Avaliar</ion-button>
+    <button class="exit">sair</button>
+  </footer>
+</ion-content>

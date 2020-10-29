@@ -1,0 +1,50 @@
+<ion-content>
+  <header>
+    <ion-icon id="arrow" size="large" name="arrow-back"></ion-icon>
+    <h1>escola</h1>
+    <ion-icon id="iconmenu" size="large" name="menu"></ion-icon>
+  </header>
+
+  <div class="form-login">
+    <ion-item>
+      <ion-label>E-mail</ion-label>
+      <p>email da escola</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Telefone</ion-label>
+      <p>telefone</p>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Endereço</ion-label>
+      <p>endereço</p>
+    </ion-item>
+
+    <div id="containerLista">
+      <ion-list >
+        <ion-item >
+          <ion-avatar slot="start">
+            <ion-skeleton-text animated></ion-skeleton-text>
+          </ion-avatar>
+          <ion-label>
+            <h3>
+              <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+            </h3>
+            <p>
+              <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+            </p>
+            <p>
+              <ion-skeleton-text animated style="width: 30%"></ion-skeleton-text>
+            </p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+  
+    </div>
+  </div>
+
+  <footer>
+    <button class="exit">sair</button>
+  </footer>
+</ion-content>
