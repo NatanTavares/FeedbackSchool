@@ -26,6 +26,14 @@ ion-content {
     }
   }
 
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    height: 18vh; 
+  }
+
   ion-item {
     border-radius: .4em;
     margin: .8em;

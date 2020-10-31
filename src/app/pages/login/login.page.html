@@ -6,15 +6,10 @@
   </header>
 
   <div class="form-login">
-    <ion-item>
-      <ion-label>CPF:</ion-label>
-      <ion-input type="string" placeholder="123.456.789.00"></ion-input>
-    </ion-item>
-
-    <ion-item>
-      <ion-label>Senha:</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
+    <div class="inputs">
+      <app-input nome="Celular" tipo="number" legenda="00 91234-5678"></app-input>
+      <app-input nome="Senha" tipo="password" legenda="Minimo 4 caracteres"></app-input>
+    </div>
   </div>
 
   <div class="options">

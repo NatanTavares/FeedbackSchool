@@ -1,6 +1,4 @@
-import { HeaderComponent } from './../../header/header.component';
-import { InputComponent } from './../../input/input.component';
-import { ButtonComponent } from './../../button/button.component';
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +16,6 @@ import { SingUpPage } from './sing-up.page';
     IonicModule,
     SingUpPageRoutingModule
   ],
-  declarations: [SingUpPage, InputComponent, HeaderComponent, ButtonComponent]
+  declarations: [SingUpPage]
 })
 export class SingUpPageModule {}
