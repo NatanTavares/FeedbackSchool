@@ -9,7 +9,7 @@
 
   color: #222;
   border-radius: 8px;
-  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, .2);
+  border: 1px solid #868686;
 
   p {
     display: flex;
@@ -23,7 +23,6 @@
     font-size: 1.2rem;
     font-weight: 700;
 
-    border: 1px solid #868686;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 
@@ -35,8 +34,8 @@
     width: 100%;
     padding: 10px;
 
-    border: 1px solid #868686;
-    border-left: none;
+    border: none;
+    border-left: 1px solid #868686;
     
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
