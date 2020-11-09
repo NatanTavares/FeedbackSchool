@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-primary);
+  color: #FFF;
+
+  height: 20vh;
+  max-height: 140px;
+
+  .content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 88%;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    ion-icon {
+      margin-bottom: -10px;
+    }
+
+    #iconmenu {
+      margin-bottom: -14px;
+    }
+  }
+}
