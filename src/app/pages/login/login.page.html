@@ -1,9 +1,5 @@
 <ion-content>
-  <header>
-    <ion-icon id="arrow" size="large" name="arrow-back"></ion-icon>
-    <h1>Login</h1>
-    <ion-icon id="iconmenu" size="large" name="menu"></ion-icon>
-  </header>
+  <app-header title="Login"></app-header>
 
   <div class="form-login">
     <div class="inputs">
@@ -13,7 +9,7 @@
   </div>
 
   <div class="options">
-    <a href="#">
+    <a [routerLink]="['/sing-up']">
       <span>Criar conta</span>
     </a>
     <a href="#">
@@ -23,6 +19,5 @@
 
   <footer>
     <ion-button class="btn-footer">Entrar</ion-button>
-    <button class="exit">sair</button>
   </footer>
 </ion-content>

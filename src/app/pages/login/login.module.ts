@@ -9,6 +9,7 @@ import { LoginPageRoutingModule } from './login-routing.module';
 import { LoginPage } from './login.page';
 
 import { InputComponent } from '../../components/input/input.component';
+import { HeaderComponent } from '../../components/header/header.component';
 
 @NgModule({
   imports: [
@@ -19,7 +20,8 @@ import { InputComponent } from '../../components/input/input.component';
   ],
   declarations: [
     LoginPage,
-    InputComponent, 
+    InputComponent,
+    HeaderComponent, 
   ]
 })
 export class LoginPageModule {}
