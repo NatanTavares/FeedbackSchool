@@ -2,18 +2,50 @@ ion-content {
   --ion-background-color: #FFF;
   font-family: 'Nunito', sans-serif;
 
-  .form-login {
+  section {
+    position: relative;
+    height: 40vh;
+    .form-login {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      
+      height: 30vh;
+      max-height: 280px;
+
+      .inputs {
+        width: 100vw;
+        margin: 0 6vw;
+        height: 20vh;
+        max-height: 280px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+    
+    .options {
+      height: 10vh;
+      width: 100vw;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  footer {
+    position: fixed;
+    bottom: 0;
+    height: 30vh;
+    max-height: 180px;
+    width: 100vw;
     display: flex;
     justify-content: center;
-    align-items: center;
-
-    background-color: #f1f1f1;
-    height: 30vh;
-    max-height: 280px;
-
-    .inputs {
-      background-color: red;
-      margin: 0 8vw;
+    .button-div {
+      //background-color: red;
+      
     }
   }
 

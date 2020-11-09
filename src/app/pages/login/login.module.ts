@@ -10,6 +10,7 @@ import { LoginPage } from './login.page';
 
 import { InputComponent } from '../../components/input/input.component';
 import { HeaderComponent } from '../../components/header/header.component';
+import { ButtonComponent } from 'src/app/components/button/button.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { HeaderComponent } from '../../components/header/header.component';
   declarations: [
     LoginPage,
     InputComponent,
-    HeaderComponent, 
+    HeaderComponent,
+    ButtonComponent 
   ]
 })
 export class LoginPageModule {}

@@ -1,23 +1,25 @@
 <ion-content>
   <app-header title="Login"></app-header>
-
-  <div class="form-login">
-    <div class="inputs">
-      <app-input nome="Celular" tipo="number" legenda="00 91234-5678"></app-input>
-      <app-input nome="Senha" tipo="password" legenda="Minimo 4 caracteres"></app-input>
+  <section>
+    <div class="form-login">
+      <div class="inputs">
+        <app-input nome="Celular" tipo="number" legenda="00 91234-5678"></app-input>
+        <app-input nome="Senha" tipo="password" legenda="Minimo 4 caracteres"></app-input>
+      </div>
     </div>
-  </div>
 
-  <div class="options">
-    <a [routerLink]="['/sing-up']">
-      <span>Criar conta</span>
-    </a>
-    <a href="#">
-      <span>Recuperar senha</span>
-    </a>
-  </div>
-
+    <div class="options">
+      <a [routerLink]="['/sing-up']">
+        <span>Criar conta</span>
+      </a>
+      <a href="#">
+        <span>Recuperar senha</span>
+      </a>
+    </div>
+  </section>
   <footer>
-    <ion-button class="btn-footer">Entrar</ion-button>
+    <div class="button-div">
+      <app-button title="Entrar"> </app-button>
+    </div>
   </footer>
 </ion-content>
