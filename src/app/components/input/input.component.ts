@@ -6,6 +6,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./input.component.scss'],
 })
 export class InputComponent implements OnInit {
+  
+  constructor() { }
 
   @Input('tipo')
   tipo: string = 'number';
@@ -15,8 +17,6 @@ export class InputComponent implements OnInit {
 
   @Input('nome')
   nome: string = 'input';
-
-  constructor() { }
 
   ngOnInit() {}
 
