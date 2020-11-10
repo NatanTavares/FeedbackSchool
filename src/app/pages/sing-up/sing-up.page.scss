@@ -1,85 +1,26 @@
-ion-content {
-    --ion-background-color: #FFF;
-    font-family: 'Nunito', sans-serif;
-  
-    header {
-      background-color: var(--color-primary);
-      margin-bottom: 2em;
-      height: 8.4em;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .arrow-left {
-        position: absolute;
-        left: 1.2em;
-        top: 3.8em;
-      }
-      h1 {
-        font-size: 26.3pt;
-        font-weight: medium;
-      }
-      #arrow{
-        padding-right: 20%;
-      }
-      #iconmenu{
-        padding-left: 20%;
-      }
-    }
-  
-    ion-item {
-      border-radius: .4em;
-      margin: .8em;
-      background-color:gray;
-  
-      ion-label {
-        font-size: 13pt;
-        font-weight: bold;
-      }
-    }
-  
-    .options, footer {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .options {
-      margin-top: 11.2em;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      a {
-        margin: .4em;
-        text-decoration: none;
-        font-size: 12pt;
-      }
-    }
-  
-  
-    footer {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 8em;
-  
-      .btn-footer {
-        font-size: 17.5pt;
-        width: 8em;
-        height: 2.4em;
-        font-weight: 400;
-        background-color: var(--color-primary);
-        color: #FFF;
-        border-radius: 6px;
-      }
-      .exit {
-        color: var(--color-exit);
-        font-weight: bold;
-        margin-top: .6em;
-        font-size: 16pt;
-        font-weight: 400;
-        background-color: #0000;
-      }
-    }
+ion-content{
+  --ion-background-color: #ffffff;
+
+  .form-singup{
+   // background-color: red;
+    padding: 0 6vw;
+    margin-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 55vh;
+    max-height: 380px;
+    width: 100vw;
   }
-  
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    height: 20vh;
+    max-height: 130px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;  
+  }
+}

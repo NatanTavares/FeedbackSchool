@@ -1,40 +1,16 @@
 <ion-content>
-    <header>
-      <ion-icon id="arrow" size="large" name="arrow-back"></ion-icon>
-      <h1>Cadastro</h1>
-      <ion-icon id="iconmenu" size="large" name="menu"></ion-icon>
-    </header>
+    <app-header title="Cadastro"></app-header>
 
-    <div class="form-login">
-      <ion-item>
-        <ion-label position="floating">Nome:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Email:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">CPF:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Senha:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
-
-      <ion-item>
-        <ion-label position="floating">Confirmar senha:</ion-label>
-        <ion-input></ion-input>
-      </ion-item>
+    <div class="form-singup">
+      <app-input nome="Nome" legenda="Digite seu nome" tipo="string" ></app-input>
+      <app-input nome="Email" legenda="Digite seu email" tipo="email" ></app-input>
+      <app-input nome="Celular" legenda="Digite seu número" tipo="number" ></app-input>
+      <app-input nome="Senha" legenda="Digite sua senha" tipo="password" ></app-input>
+      <app-input nome="Confirmar senha" legenda="Redigite sua senha" tipo="password" ></app-input>
     </div>
 
 
     <footer>
-      <ion-button class="btn-footer">Criar conta</ion-button>
-      <button class="exit">Sair</button>
+      <app-button title="Cadastrar"></app-button>
     </footer>
 </ion-content>
