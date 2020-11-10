@@ -4,15 +4,15 @@ ion-content {
 
   section {
     position: relative;
-    height: 40vh;
+    height: 56vh;
+    max-height: 500px;
     .form-login {
       display: flex;
       justify-content: center;
       align-items: center;
-
-      
       height: 30vh;
       max-height: 280px;
+      
 
       .inputs {
         width: 100vw;
@@ -38,7 +38,7 @@ ion-content {
   footer {
     position: fixed;
     bottom: 0;
-    height: 30vh;
+    height: 20vh;
     max-height: 180px;
     width: 100vw;
     display: flex;
