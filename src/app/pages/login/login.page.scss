@@ -39,77 +39,9 @@ ion-content {
     position: fixed;
     bottom: 0;
     height: 20vh;
-    max-height: 180px;
+    max-height: 130px;
     width: 100vw;
     display: flex;
-    justify-content: center;
-    .button-div {
-      //background-color: red;
-      
-    }
+    justify-content: center;  
   }
-
-  // .inputs {
-  //   display: flex;
-  //   flex-direction: column;
-  //   justify-content: space-between;
-    
-  //   height: 18vh; 
-  // }
-
-  // ion-item {
-  //   border-radius: .4em;
-  //   margin: .8em;
-  //   background-color:gray;
-
-  //   ion-label {
-  //     font-size: 13pt;
-  //     font-weight: bold;
-  //   }
-  // }
-
-  // .options, footer {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  // }
-
-  // .options {
-  //   margin-top: 11.2em;
-  //   display: flex;
-  //   justify-content: center;
-  //   flex-direction: column;
-  //   a {
-  //     margin: .4em;
-  //     text-decoration: none;
-  //     font-size: 12pt;
-  //   }
-  // }
-
-
-  // footer {
-  //   position: absolute;
-  //   bottom: 0;
-  //   left: 0;
-  //   right: 0;
-  //   height: 8em;
-
-  //   .btn-footer {
-  //     font-size: 17.5pt;
-  //     width: 8em;
-  //     height: 2.4em;
-  //     font-weight: 400;
-  //     background-color: var(--color-primary);
-  //     color: #FFF;
-  //     border-radius: 6px;
-  //   }
-  //   .exit {
-  //     color: var(--color-exit);
-  //     font-weight: bold;
-  //     margin-top: .6em;
-  //     font-size: 16pt;
-  //     font-weight: 400;
-  //     background-color: #0000;
-  //   }
-  // }
 }
