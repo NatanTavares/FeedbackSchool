@@ -1,0 +1,63 @@
+<ion-content>
+  <header>
+    <div class="logo">
+      <img src="../../../assets/logo.svg" alt="Logo">
+    </div>
+  </header>
+
+  <title>
+    FeedbackSchool
+  </title>
+
+  <main id="listaAvaliacoes">
+    <ion-list *ngIf="!feedbacks.length">
+      <ion-item *ngFor="let item of [0, 1, 2]">
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+          </h3>
+          <p>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </p>
+          <p>
+            <ion-skeleton-text animated style="width: 30%"></ion-skeleton-text>
+          </p>
+        </ion-label>  
+      </ion-item>
+    </ion-list>
+
+    <ion-list *ngFor="let feedback of feedbacks.slice(0, 3)">
+      <ion-item button [routerLink]="['/feedback-detail', feedback.id]">
+        <ion-avatar slot="start">
+          <img src="assets/escola.png">
+        </ion-avatar>
+
+        <ion-label>
+          <h4>{{feedback.nomeInstituicao}}</h4>
+          <p>{{feedback.observacao}}</p>
+          <p>{{feedback.createdAt | date: 'short'}}</p>
+        </ion-label>
+
+        <ion-note color="primary" slot="end" *ngIf="feedback.estrelas">{{feedback.estrelas}}
+          <img src="assets/star.png"  width="25px">
+        </ion-note>
+      </ion-item>
+    </ion-list>
+  </main>
+
+  <footer>
+    <div class="buttons">
+      <button class="left" [routerLink]="['/feedbacks']">
+      + Avaliações
+      </button>
+
+      <button class="right" [routerLink]="['/login']">
+        Avaliar
+      </button>
+    </div>
+  </footer>
+</ion-content>
