@@ -1,0 +1,65 @@
+ion-content {
+  --ion-background-color: #FFF;
+  font-family: 'Nunito', sans-serif;
+
+  .form-login {
+    margin-top: 8vh;
+
+    ion-item {
+      border-radius: 5px;
+      margin: 2vh;
+      
+      color: #333;
+      --background: #E3E3E3;
+
+      ion-label {
+        font-size: 13pt;
+        font-weight: bold;
+      }
+    }
+
+    .options {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 100%;
+
+      margin-top: 10vh;
+
+      .option {
+        color: var(--color-secondary);
+        font-size: 16pt;
+        background-color: transparent;
+        max-width: 176px;
+      }
+
+      #newConta {
+        margin-bottom: 2.4vh;
+      }
+    }
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+
+    height: 14vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    .btn-footer {
+      width: 8em;
+      height: 2.4em;
+
+      font-size: 17.5pt;
+      font-weight: 400;
+      color: #FFF;
+
+      border-radius: 6px;
+      --background: var(--color-primary);
+    }
+  }
+}
