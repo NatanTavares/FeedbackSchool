@@ -1,0 +1,23 @@
+<ion-content>
+  <app-header title="Cadastro"></app-header>
+
+  <div class="formularioLogin">
+    <ion-item>
+      <ion-label>Email:</ion-label>
+      <ion-input type="email" [(ngModel)]= "userRegister.email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Senha:</ion-label>
+      <ion-input type="password" [(ngModel)]= "userRegister.password"></ion-input>
+    </ion-item>
+
+    <div class="options">
+      <button class="option" [routerLink]="['/login']">Possuo uma conta</button>
+    </div>
+  </div>
+
+  <footer>
+    <ion-button class="btn-footer" (click)="register()">Criar Conta</ion-button>
+  </footer>
+</ion-content>
