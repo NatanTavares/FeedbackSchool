@@ -1,0 +1,51 @@
+ion-content {
+  --ion-background-color: #FFF;
+  font-family: 'Nunito', sans-serif;
+
+  ion-searchbar {
+    margin-top: -3vh;
+    padding: 0 4vw;
+    --border-radius: 6px;
+
+    --color: #FFF;
+    --placeholder-color: #FFF;
+    --placeholder-font-weight: bold;
+
+    --background: #A7AEC5;
+    --icon-color: #FFF;
+
+    --cancel-button-color: #FFF;
+    --clear-button-color: #FFF;
+    // #F43A3A -> exit color
+  } 
+
+  ion-list {
+    --ion-item-background: #FFF;
+  
+    .avaliacaoCarregando {
+      --ion-item-background: #333;
+    }
+
+    ion-item {
+      --ion-item-background: rgb(229, 232, 255);
+      border-radius: 8px;
+      margin: .8vh 4vw;
+  
+      ion-label {
+        h4 {
+          color: var(--font-title);
+          font-weight: bold;
+        }
+  
+        p {
+          color: #888;
+        }
+      }
+
+      ion-note {
+        font-size: 25px;
+      }
+    }
+  }
+}
+  

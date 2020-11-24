@@ -1,0 +1,58 @@
+<ion-content>
+  <app-header title="Avaliações"></app-header>
+
+  <div class="container">
+    <ion-searchbar placeholder="Pesquise escolas aqui" [(ngModel)]="queryText" (ionInput)="filter($event)" clearInput></ion-searchbar>
+
+    <ion-list *ngIf="!feedbacks.length">
+      <ion-item class="avaliacaoCarregando" *ngFor="let item of [0, 1, 2, 3]">
+        <ion-avatar slot="start">
+          <ion-skeleton-text animated></ion-skeleton-text>
+        </ion-avatar>
+        <ion-label>
+          <h3>
+            <ion-skeleton-text animated style="width: 50%"></ion-skeleton-text>
+          </h3>
+          <p>
+            <ion-skeleton-text animated style="width: 80%"></ion-skeleton-text>
+          </p>
+          <p>
+            <ion-skeleton-text animated style="width: 30%"></ion-skeleton-text>
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+
+    <!--scrool infinito-->
+    <ion-list *ngFor="let feedback of feedbacks">
+      <ion-item button [routerLink]="['/feedback-detail', feedback.id]">
+        <ion-avatar slot="start">
+          <img src="assets/escola.png">
+        </ion-avatar>
+
+        <ion-label>
+          <h4>{{feedback.nomeInstituicao}}</h4>
+          <p>{{feedback.observacao}}</p>
+          <p>{{feedback.createdAt | date: 'short'}}</p>
+        </ion-label>
+
+        <ion-note color="primary" slot="end" *ngIf="feedback.estrelas">{{feedback.estrelas}}
+          <img src="assets/star.png" width="25px">
+        </ion-note>
+      </ion-item>
+    </ion-list>
+
+    <ion-infinite-scroll threshold="5px" (ionInfinite)="loadData($event)">
+      <ion-infinite-scroll-content loadingSpinner="bubbles" loadingText="Carregando mais avaliações...">
+      </ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </div>
+
+  <!--Botao flutuante-->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/landing']">
+      <ion-icon name="home-outline"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+</ion-content>
