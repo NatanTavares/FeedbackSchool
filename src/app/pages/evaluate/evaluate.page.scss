@@ -3,49 +3,81 @@ ion-content {
   font-family: 'Nunito', sans-serif;
 
   main {
-    background-color: #F8F8F8;
-    max-width: 680px;
+    margin: 2vh 2vw;
 
-    margin: 0 auto;
-  }
+    display: flex;
+    justify-content: center;
 
-  ion-item {
-    --ion-item-background: none;
-    --ion-border-color: #C4C4C4;
+    .content {
+      background-color: #F8F8F8;
+      border: solid 2px #C4C4C4;
+      border-radius: 5px;
 
-    color: #333;
-
-    border-radius: 4px;
-    margin: .8em;
-
-    ion-label {
-      font-size: 13pt;
-      font-weight: bold;
+      padding: 4px;
+      max-width: 680px;
+      width: 90vw;
     }
 
-    text-align: center;
-  }
+    ion-item {
+      --ion-item-background: none;
+      --ion-border-color: #D6D6D6;
+      --border-width: 1px;
+      --border-radius: 4px;
 
-  .estrelas input[type=radio] {
-    display: none;  
-  }
+      color: #333;
 
-  .estrelas label i.fa:before {
-    content:'\f005';
-    color: #FC0;
-  }
+      border-radius: 4px;
+      margin: .8em;
 
-  .estrelas input[type=radio]:checked ~ label i.fa:before {
-    color: #CCC;
-  }
+      ion-label {
+        font-size: 12pt;
+        font-weight: bold;
+      }
 
-  .estrelas {
-    text-align: center;
-    font-size: 40px;
-  }
+      ion-textarea {
+        --padding-bottom: 12.5%;
+      }
 
-  ion-textarea {
-    --padding-bottom: 12.5%
-  }
+      text-align: center;
+    }
+
+    .estrelas input[type=radio] {
+      display: none;
+      background-color: red;
+    }
+  
+    .estrelas label i.fa:before {
+      content:'\f005';
+      color: #FC0;
+    }
+  
+    .estrelas input[type=radio]:checked ~ label i.fa:before {
+      color: #CCC;
+    }
+  
+    .estrelas {
+      text-align: center;
+      font-size: 40px;
+    }
+
+    .btnArea {
+      display: flex;
+      justify-content: center;
+
+      .btn {
+        width: 8em;
+        height: 2.4em;
+
+        margin: 2vh;
+
+        font-size: 17.5pt;
+        font-weight: 400;
+        color: #FFF;
+
+        border-radius: 6px;
+        --background: var(--color-primary);
+      }
+    }
+  } 
 }
   

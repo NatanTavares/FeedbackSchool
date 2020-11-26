@@ -3,66 +3,73 @@
   <app-header title="Avaliar"></app-header>
 
   <main>
-    <ion-item>
-      <ion-input 
-        type="string" 
-        placeholder="Nome Instituição" 
-        [(ngModel)]= "feedback.nomeInstituicao" 
-        maxlength='30'
-      ></ion-input>
-    </ion-item>
-    
-    <ion-item>
-      <ion-input 
-        type="string" 
-        placeholder="Endereço Instituição, ex: Rua da luza,19 - Salvador-ba" 
-        [(ngModel)]= "feedback.endereco" 
-        maxlength='45'></ion-input>
-    </ion-item>
-    
-    <ion-item>
-      <ion-input 
-        type="string" 
-        placeholder="Seu nome" 
-        [(ngModel)]= "feedback.nomeAvaliador" 
-        maxlength='20'
-      ></ion-input>
-    </ion-item>
+    <div class="content">
 
-    <ion-item id="none-border">
-      <ion-label>Relação com a instituição</ion-label>
-      <ion-select  [(ngModel)]= "feedback.relacaoInstituicao">
-        <ion-select-option value="Professor">Professor</ion-select-option>
-        <ion-select-option value="Estudante" >Estudante</ion-select-option>
-        <ion-select-option value="Pais">Pais</ion-select-option>
-        <ion-select-option value="Ex-Estudante" >Ex-Estudante</ion-select-option>
-        <ion-select-option value="Funcionario" >Funcionário/Outros</ion-select-option>
-      </ion-select>
-    </ion-item>
+      <ion-item>
+        <ion-input 
+          type="string" 
+          placeholder="Nome Instituição" 
+          [(ngModel)]= "feedback.nomeInstituicao" 
+          maxlength='30'
+        ></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input 
+          type="string" 
+          placeholder="Endereço Instituição, ex: Rua da luza,19 - Salvador-ba" 
+          [(ngModel)]= "feedback.endereco" 
+          maxlength='45'></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-input 
+          type="string" 
+          placeholder="Seu nome" 
+          [(ngModel)]= "feedback.nomeAvaliador" 
+          maxlength='20'
+        ></ion-input>
+      </ion-item>
+  
+      <ion-item id="none-border">
+        <ion-label>Relação com a instituição</ion-label>
+        <ion-select  [(ngModel)]= "feedback.relacaoInstituicao">
+          <ion-select-option value="Professor">Professor</ion-select-option>
+          <ion-select-option value="Estudante" >Estudante</ion-select-option>
+          <ion-select-option value="Pais">Pais</ion-select-option>
+          <ion-select-option value="Ex-Estudante" >Ex-Estudante</ion-select-option>
+          <ion-select-option value="Funcionario" >Funcionário/Outros</ion-select-option>
+        </ion-select>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Quantas estrelas a instituição merece?</ion-label>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      </ion-item>
+  
+      <div class="estrelas">
+        <input type="radio" id="cm_star-empty" name="fb" value="" checked />
+        <label for="cm_star-1"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-1" name="fb" value="1" [(ngModel)]= "feedback.estrelas" />
+        <label for="cm_star-2"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-2" name="fb" value="2" [(ngModel)]= "feedback.estrelas" />
+        <label for="cm_star-3"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-3" name="fb" value="3" [(ngModel)]= "feedback.estrelas" />
+        <label for="cm_star-4"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-4" name="fb" value="4" [(ngModel)]= "feedback.estrelas" />
+        <label for="cm_star-5"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-5" name="fb" value="5" [(ngModel)]= "feedback.estrelas" />
+      </div>
+  
+      <ion-item>
+        <ion-textarea placeholder="Deixe sua observação aqui.." [(ngModel)]= "feedback.observacao"  maxlength='120'></ion-textarea>
+      </ion-item>
+  
+      <div class="btnArea">
+        <ion-button class="btn" (click)="evaluate()" (click)="logout()">Avaliar</ion-button>
+      </div>
 
-    <ion-item>
-      <ion-label>Quantas estrelas a instituição merece?</ion-label>
-      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    </ion-item>
-
-    <div class="estrelas">
-      <input type="radio" id="cm_star-empty" name="fb" value="" checked />
-      <label for="cm_star-1"><i class="fa"></i></label>
-      <input type="radio" id="cm_star-1" name="fb" value="1" [(ngModel)]= "feedback.estrelas" />
-      <label for="cm_star-2"><i class="fa"></i></label>
-      <input type="radio" id="cm_star-2" name="fb" value="2" [(ngModel)]= "feedback.estrelas" />
-      <label for="cm_star-3"><i class="fa"></i></label>
-      <input type="radio" id="cm_star-3" name="fb" value="3" [(ngModel)]= "feedback.estrelas" />
-      <label for="cm_star-4"><i class="fa"></i></label>
-      <input type="radio" id="cm_star-4" name="fb" value="4" [(ngModel)]= "feedback.estrelas" />
-      <label for="cm_star-5"><i class="fa"></i></label>
-      <input type="radio" id="cm_star-5" name="fb" value="5" [(ngModel)]= "feedback.estrelas" />
     </div>
-
-    <ion-item>
-      <ion-textarea placeholder="Deixe sua observação aqui.." [(ngModel)]= "feedback.observacao"  maxlength='120'></ion-textarea>
-    </ion-item>
-
-    <ion-button class="btn-footer" (click)="evaluate()" (click)="logout()">Avaliar</ion-button>
+    
   </main>
 </ion-content>
