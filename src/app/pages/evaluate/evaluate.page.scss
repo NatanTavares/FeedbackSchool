@@ -1,0 +1,51 @@
+ion-content {
+  --ion-background-color: #FFF;
+  font-family: 'Nunito', sans-serif;
+
+  main {
+    background-color: #F8F8F8;
+    max-width: 680px;
+
+    margin: 0 auto;
+  }
+
+  ion-item {
+    --ion-item-background: none;
+    --ion-border-color: #C4C4C4;
+
+    color: #333;
+
+    border-radius: 4px;
+    margin: .8em;
+
+    ion-label {
+      font-size: 13pt;
+      font-weight: bold;
+    }
+
+    text-align: center;
+  }
+
+  .estrelas input[type=radio] {
+    display: none;  
+  }
+
+  .estrelas label i.fa:before {
+    content:'\f005';
+    color: #FC0;
+  }
+
+  .estrelas input[type=radio]:checked ~ label i.fa:before {
+    color: #CCC;
+  }
+
+  .estrelas {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  ion-textarea {
+    --padding-bottom: 12.5%
+  }
+}
+  
