@@ -1,0 +1,101 @@
+ion-content {
+  --ion-background-color: #FFF;
+  font-family: 'Nunito', sans-serif;
+
+  header {
+    background-color: var(--color-primary);
+    height: 8.4em;
+
+    padding: 0 8vw;
+
+    display:flex;
+    flex: 1;
+    flex-direction: row;
+    align-items: center;
+
+    #none {
+      width: 15px;
+    }
+
+    #nomeInst {
+      min-width: 200px;
+      flex: 3;
+      text-align: center;
+
+      h1 {
+        font-size: 24pt;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .container {
+    margin: 0 4vw;
+
+    section {
+      max-width: 660px;
+      margin: 4vh auto 0;
+      padding: 10px 2vw;
+      
+      color: #333;
+      background-color: #F8F8F8;
+      border: 2px solid #C4C4C4;
+      
+      h2 {
+        strong {
+          color: var(--color-primary);
+        }
+      }
+  
+      #estrelas {
+        margin: 4px 0;
+        text-align: center;
+        
+        p {
+          font-size: 43px;
+          display: inline;
+        }
+  
+        img {
+          width: 40px;
+        }
+      }
+  
+      .avaliacao {
+        border-top: 1px solid #C4C4C4;
+  
+        h4 {
+          max-height: 140px;
+          overflow: hidden;
+        }
+
+        h5 {
+          color: #727272;
+        }
+      }
+    }
+  }
+  
+  footer {
+    position: absolute;
+    bottom: 0;
+
+    height: 14vh;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+
+    .btn-footer {
+      width: 8em;
+      height: 2.4em;
+
+      font-size: 17.5pt;
+      font-weight: 400;
+      color: #FFF;
+
+      border-radius: 6px;
+      --background: var(--color-exit);
+    }
+  }
+}

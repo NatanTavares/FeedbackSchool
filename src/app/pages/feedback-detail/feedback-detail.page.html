@@ -1,0 +1,36 @@
+<ion-content>
+  <header>
+    <div id="none"></div>
+
+    <div id="nomeInst">
+      <h1>{{feedback.nomeInstituicao}}</h1>
+    </div>
+    
+    <div id="iconMenu">
+      <ion-icon id="iconmenu" size="large" name="menu" (click)='openMenu()'></ion-icon>
+    </div>
+  </header>
+
+  <div class="container">
+    <section>
+      <h2>{{feedback.nomeAvaliador}} / <strong>{{feedback.relacaoInstituicao}}</strong></h2>
+
+      <div id="estrelas">
+        <p id="qt">{{feedback.estrelas}}</p>
+        <img id="star" src="../../../assets/star.png" alt="Logo">
+      </div>
+      
+      <div class="avaliacao">
+        <h4>{{feedback.observacao}}</h4>
+        <h5>Endereço: {{feedback.endereco}}</h5>
+      </div>
+    </section>
+  </div>
+  
+
+  <footer>
+    <ion-button class="btn-footer" [routerLink]="['/report']">
+      Denunciar
+    </ion-button>
+  </footer>
+</ion-content>
