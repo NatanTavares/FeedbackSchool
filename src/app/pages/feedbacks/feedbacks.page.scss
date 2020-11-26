@@ -29,7 +29,7 @@ ion-content {
     ion-item {
       --ion-item-background: rgb(229, 232, 255);
       border-radius: 8px;
-      margin: .8vh 4vw;
+      margin: 0 4vw;
   
       ion-label {
         h4 {
@@ -44,6 +44,7 @@ ion-content {
 
       ion-note {
         font-size: 25px;
+        color: var(--color-primary);
       }
     }
   }
