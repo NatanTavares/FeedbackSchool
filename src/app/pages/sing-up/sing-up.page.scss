@@ -10,7 +10,10 @@ ion-content {
       margin: 2vh;
       
       color: #333;
-      --background: #E3E3E3;
+      --background: #F8F8F8;
+      --border-width: 1px;
+      --border-color: #C4C4C4;
+      --border-radius: 5px;
 
       ion-label {
         font-size: 13pt;
@@ -31,7 +34,7 @@ ion-content {
         color: var(--color-secondary);
         font-size: 16pt;
         background-color: transparent;
-        max-width: 187px;
+        max-width: 192px;
       }
     }
   }
