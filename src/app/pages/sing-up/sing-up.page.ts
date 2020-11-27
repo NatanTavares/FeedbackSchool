@@ -12,6 +12,7 @@ import { AuthService } from 'src/app/services/auth.service';
 export class SingUpPage implements OnInit {
   public userRegister: User = {}
   private loading: any;
+  private confirmPassword;
 
   constructor(
     private _menu: MenuController,
@@ -29,37 +30,44 @@ export class SingUpPage implements OnInit {
   async register() {
     await this.presentLoading();
 
-    try {
-      await this.authService.register(this.userRegister);
-      this.router.navigate(['/evaluate'])
-
-    } catch (error) {
-      console.error(error)
-      let message: string
-
-      switch (error.code) {
-        case 'auth/email-already-in-use':
-          message = 'E-mail já sendo usado!'
-          break;
-        case 'auth/invalid-email':
-          message = 'E-mail inválido!'
-          break;
-        case 'auth/argument-error':
-          message = 'Algum campo vazio!'
-          break;
-        case 'auth/weak-password':
-          message = 'Senha fraca!'
-          break;
+    if(this.userRegister.password == this.confirmPassword) {
+      try {
+        await this.authService.register(this.userRegister);
+        this.router.navigate(['/evaluate'])
+  
+      } catch (error) {
+        console.error(error)
+        let message: string
+  
+        switch (error.code) {
+          case 'auth/email-already-in-use':
+            message = 'E-mail já sendo usado!'
+            break;
+          case 'auth/invalid-email':
+            message = 'E-mail inválido!'
+            break;
+          case 'auth/argument-error':
+            message = 'Algum campo vazio!'
+            break;
+          case 'auth/weak-password':
+            message = 'Senha fraca!'
+            break;
+        }
+  
+        this.presentToast(message);
+      } finally {
+        this.loading.dismiss();
       }
 
-      this.presentToast(message);
-    } finally {
+    } else{
+      this.presentToast('As senhas não conferem!!');
       this.loading.dismiss();
     }
+   
   }
 
   async presentLoading() {
-    this.loading = await this.loadingCtrl.create({ message: 'Porfavor, aguarde...' });
+    this.loading = await this.loadingCtrl.create({ message: 'Por favor, aguarde...' });
     return this.loading.present();
   }
 
@@ -71,7 +79,4 @@ export class SingUpPage implements OnInit {
   async openMenu() {
     await this._menu.open();
   }
-
-
-
 }
