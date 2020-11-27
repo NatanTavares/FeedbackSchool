@@ -42,23 +42,28 @@ ion-content {
       border: 2px solid #C4C4C4;
       border-radius: 4px;
       
-      h2 {
+      h2 {        
         strong {
           color: var(--color-primary);
         }
       }
   
-      #estrelas {
+      #estrelasSat {
+        border-top: 1px solid #C4C4C4;
+        padding: 8px 0;
+      }
+
+      .estrelas {
         margin: 4px 0;
-        text-align: center;
-        
+        text-align: left;
+
         p {
-          font-size: 43px;
+          font-size: 24px;
           display: inline;
         }
   
         img {
-          width: 40px;
+          width: 24px;
         }
       }
   

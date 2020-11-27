@@ -15,9 +15,19 @@
     <section>
       <h2>{{feedback.nomeAvaliador}} / <strong>{{feedback.relacaoInstituicao}}</strong></h2>
 
-      <div id="estrelas">
-        <p id="qt">{{feedback.estrelas}}</p>
-        <img id="star" src="../../../assets/star.png" alt="Logo">
+      <div class="estrelas" id="estrelasSat">
+        <p id="qt">Satisfação: {{feedback.estrelas}}</p>
+        <img src="../../../assets/star.png" alt="estrelas">
+      </div>
+
+      <div class="estrelas">
+        <p id="qt">Ensino: {{feedback.qualiEnsino}}</p>
+        <img src="../../../assets/star.png" alt="estrelas">
+      </div>
+
+      <div class="estrelas">
+        <p id="qt">Infraestrutura: {{feedback.infra}}</p>
+        <img src="../../../assets/star.png" alt="estrelas">
       </div>
       
       <div class="avaliacao">
@@ -27,7 +37,6 @@
     </section>
   </div>
   
-
   <footer>
     <ion-button class="btn-footer" [routerLink]="['/report']">
       Denunciar

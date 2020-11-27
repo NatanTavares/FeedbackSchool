@@ -16,7 +16,6 @@ export class EvaluatePage implements OnInit {
   public userLogin: User = {}
   public feedback: Feedback = {}
   private loading: any
- 
 
   constructor(
     private authService: AuthService,
@@ -43,16 +42,21 @@ export class EvaluatePage implements OnInit {
   async evaluate() {
     await this.presentLoading();
 
-    try {
-      await this.crudService.addFeedback(this.feedback);
-      await this.loading.dismiss();
-
-      this.navCtrl.navigateBack('/feedbacks');
-    } catch (error) {
-      this.presentToast('Erro ao tentar salvar');
+    if (this.feedback.nomeInstituicao == null || this.feedback.endereco == null || this.feedback.nomeAvaliador == null || this.feedback.estrelas == null || this.feedback.qualiEnsino == null || this.feedback.infra == null || this.feedback.observacao == null) {
+      this.presentToast('Algum campo vazio!');
       this.loading.dismiss();
+    } else {
+      try {
+        await this.crudService.addFeedback(this.feedback);
+        await this.loading.dismiss();
+        await this.authService.logout(this.userLogin);
+  
+        this.navCtrl.navigateBack('/feedbacks');
+      } catch (error) {
+        this.presentToast('Erro ao tentar salvar');
+        this.loading.dismiss();
+      }
     }
-
   }
 
   async presentLoading() {
@@ -64,5 +68,4 @@ export class EvaluatePage implements OnInit {
     const toast = await this.toastCtrl.create({ message, duration: 2000 });
     toast.present();
   }
-
 }

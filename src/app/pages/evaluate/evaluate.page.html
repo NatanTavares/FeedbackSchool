@@ -4,7 +4,6 @@
 
   <main>
     <div class="content">
-
       <ion-item>
         <ion-input 
           type="string" 
@@ -62,13 +61,48 @@
       </div>
   
       <ion-item>
+        <ion-label>Qualidade de ensino</ion-label>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      </ion-item>
+      <div class="estrelas">
+        <input type="radio" id="cm_star-empty" name="fc" value="" checked />
+        <label for="cm_star-11"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-11" name="fc" value="1" [(ngModel)]="feedback.qualiEnsino" />
+        <label for="cm_star-22"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-22" name="fc" value="2" [(ngModel)]="feedback.qualiEnsino" />
+        <label for="cm_star-33"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-33" name="fc" value="3" [(ngModel)]="feedback.qualiEnsino" />
+        <label for="cm_star-44"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-44" name="fc" value="4" [(ngModel)]="feedback.qualiEnsino" />
+        <label for="cm_star-55"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-55" name="fc" value="5" [(ngModel)]="feedback.qualiEnsino" />
+      </div>
+  
+      <ion-item>
+        <ion-label>Infraestrutura</ion-label>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+      </ion-item>
+      <div class="estrelas">
+        <input type="radio" id="cm_star-empty" name="fd" value="" checked />
+        <label for="cm_star-111"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-111" name="fd" value="1" [(ngModel)]="feedback.infra" />
+        <label for="cm_star-222"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-222" name="fd" value="2" [(ngModel)]="feedback.infra" />
+        <label for="cm_star-333"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-333" name="fd" value="3" [(ngModel)]="feedback.infra" />
+        <label for="cm_star-444"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-444" name="fd" value="4" [(ngModel)]="feedback.infra" />
+        <label for="cm_star-555"><i class="fa"></i></label>
+        <input type="radio" id="cm_star-555" name="fd" value="5" [(ngModel)]="feedback.infra" />
+      </div>
+
+      <ion-item>
         <ion-textarea placeholder="Deixe sua observação aqui.." [(ngModel)]= "feedback.observacao"  maxlength='120'></ion-textarea>
       </ion-item>
   
       <div class="btnArea">
         <ion-button class="btn" (click)="evaluate()" (click)="logout()">Avaliar</ion-button>
       </div>
-
     </div>
     
   </main>

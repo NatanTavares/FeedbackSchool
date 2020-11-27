@@ -7,4 +7,6 @@ export interface Feedback {
     observacao?: string;
     createdAt?: number;
     endereco?: string;
+    infra?:string
+    qualiEnsino?:string
 }
