@@ -14,18 +14,17 @@ export class AppComponent implements OnInit {
   public appPages = [
     
     {
+      title: 'Home',
+      url: '/landing',
+      icon: 'home'
+    },
+
+    {
       title: 'Suporte',
       url: '/report',
       icon: 'bulb'
-    },
-  
-    {
-      title: 'Sair',
-      url: '/landing',
-      icon: 'close-circle'
     }
   ];
-  
 
   constructor(
     private platform: Platform,
