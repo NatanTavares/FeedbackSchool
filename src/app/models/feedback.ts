@@ -1,4 +1,4 @@
-export interface Feedback {
+export class Feedback {
     id?: string;
     nomeInstituicao?: string;
     nomeAvaliador?: string;

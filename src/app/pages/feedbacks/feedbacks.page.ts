@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { IonInfiniteScroll, MenuController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
-import { Feedback } from 'src/app/interfaces/feedback';
+import { Feedback } from 'src/app/models/feedback';
 import { CrudService } from 'src/app/services/crud.service';
 import _ from 'lodash'
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { AngularFirestore, AngularFirestoreCollection, AngularFirestoreModule } from '@angular/fire/firestore';
-import { Feedback } from '../interfaces/feedback';
+import { Feedback } from '../models/feedback';
 import { map } from 'rxjs/operators'
 
 @Injectable({

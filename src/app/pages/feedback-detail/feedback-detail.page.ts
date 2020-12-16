@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { MenuController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
-import { Feedback } from 'src/app/interfaces/feedback';
+import { Feedback } from 'src/app/models/feedback';
 import { CrudService } from 'src/app/services/crud.service';
 
 @Component({

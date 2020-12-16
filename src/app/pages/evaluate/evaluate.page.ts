@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController, MenuController, NavController, ToastController } from '@ionic/angular';
 import { Subscription } from 'rxjs';
-import { Feedback } from 'src/app/interfaces/feedback';
-import { User } from 'src/app/interfaces/user';
+import { Feedback } from 'src/app/models/feedback';
+import { User } from 'src/app/models/user';
 import { AuthService } from 'src/app/services/auth.service';
 import { CrudService } from 'src/app/services/crud.service';
 
